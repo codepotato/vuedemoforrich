@@ -1,28 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <SmokingData msg="Welcome to Your Vue.js App"/>
+    <hr>
+    <DiseaseData ></DiseaseData>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SmokingData from './components/SmokingData.vue'
+import DiseaseData from './components/DiseaseData'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    SmokingData,
+    DiseaseData
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
